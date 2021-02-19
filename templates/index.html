@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Flask + AJAX + D3</title>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-signin" role="form">
+            <h2 class="form-signin-heading">Enter 2 numbers</h2>
+            <input type="text" id="num1" name="num1" class="form-control" placeholder="First number" required autofocus>
+            <input type="text" id="num2" name="num2" class="form-control" placeholder="Second number" required>
+            <button class="btn btn-lg btn-primary btn-block" type="button">Add!</button>
+        </form>
+    </div>
+
+    <div class="myGraph"></div>
+
+    <div id="val1"></div>
+    <div id="val2"></div>
+
+    <!--
+    <script>
+        var svg = d3.select("div.myGraph")
+            .append("svg")
+            .attr("width", 400)
+            .attr("height", 200);
+
+        var data = [{ x1: 20, x2: 60, y1: 30, y2: 50 }];
+
+        var rects = svg.selectAll("div.myGraph")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("x", d => d.x1)
+            .attr("y", d => d.y1)
+            .attr("width", d => d.x2 - d.x1)
+            .attr("height", d => d.y2 - d.y1)
+            .attr("fill", "teal");
+    </script>
+-->
+
+</body>
+
+</html>
